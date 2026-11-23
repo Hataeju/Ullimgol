@@ -79,6 +79,8 @@ flowchart LR
 
 ### 1. 사진 단서 본편 — 55초 · v7 게임 시연
 
+https://github.com/user-attachments/assets/fa9f8a21-62aa-42bb-97c8-5703852930c2
+
 영상이 재생되지 않으면: [MP4 파일 5.0MB](media/ullimgol-v7-demo-photo-clue.mp4)
 
 | 시간 | 장면 |
@@ -96,6 +98,8 @@ flowchart LR
 > 사진을 보관했고 뒷면은 아직 읽지 않은 테스트 저장(`locker17` 시나리오)으로 시작했고, 무적 옵션을 켰습니다. 걸어가는 구간, 승강기를 기다리는 동안 크리처가 다가온 장면은 잘라 냈습니다. 게임 안 녹화가 초당 약 18.6장이라 움직임이 조금 끊겨 보입니다.
 
 ### 2. 종머리 몸통 연속 사격 — 12초 · v7 게임 시연
+
+https://github.com/user-attachments/assets/0e5779dc-3ab2-4022-a4d2-43bfde6a8a2e
 
 영상이 재생되지 않으면: [MP4 파일 2.3MB](media/ullimgol-v7-demo-bellhead-body-shots.mp4)
 
