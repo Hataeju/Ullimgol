@@ -89,21 +89,10 @@ https://github.com/user-attachments/assets/0e5779dc-3ab2-4022-a4d2-43bfde6a8a2e
 
 그래서 피해를 입은 크리처의 몸이 0.15초쯤 밝게 번쩍이게 했다. 종머리는 머리에 쓴 종이 총알을 막는데, 종소리만 듣고는 막힌 건지 맞은 건지 알기 어려웠다. 같은 총으로 몸통과 종을 한 번씩 쏴 보고, 몸통은 피해가 들어가고 종은 막히는 걸 확인했다.
 
-| 고치기 전 | 고친 뒤 |
-|---|---|
-| ![두 발을 맞혀도 종머리 몸에 맞았다는 표시가 거의 없다](media/hit-before.gif) | ![맞을 때마다 종머리 몸이 밀리며 하얗게 번쩍이고, 두 번째 발에 휘청인다](media/hit-after.gif) |
-
 <br>
 
-## 여기 올린 것
+## 만들 때 쓴 것
 
-전부는 아니고 일부만 올려 뒀다. 이 글과 시연 영상 두 개, 고치기 전과 뒤를 나란히 놓은 움짤들, 그리고 위에 적은 부분의 코드 네 개다. Unity 프로젝트 전체와 실행 파일은 올리지 않았다.
+크리처와 무기, 소품, 3D 모델, 목소리는 Higgsfield로 만들었다. 효과음은 OpenGameArt에 CC0으로 올라온 소리(Kenney, artisticdude, HaelDB, TinyWorlds, Zane Little Music, AntumDeluge, Ove Melaa, kurt)에 게임 안에서 합성한 소리를 섞었고, 글꼴은 IBM Plex Sans KR, 고운바탕, 나눔손글씨 펜, 갈무리를 썼다.
 
-- [code/Locker17_excerpt.cs](code/Locker17_excerpt.cs) 첫 사진이 나오는 확률과 17번 사물함 배치
-- [code/PhotoStage_excerpt.cs](code/PhotoStage_excerpt.cs) 사진 카드를 끌어 돌리고, 뒷면을 읽었는지 판단하는 부분
-- [code/ScrollKeep.cs](code/ScrollKeep.cs) 창을 다시 그려도 목록 위치를 지키는 부분
-- [code/HitFlash.cs](code/HitFlash.cs) 맞았을 때 몸이 번쩍이는 효과
-
-코드는 게임의 다른 부분에 기대고 있어서 따로 컴파일되지는 않는다. 어디서 얼마나 옮겼는지는 [code/README.md](code/README.md)에 적어 뒀다.
-
-크리처와 무기, 소품, 재질, UI 그림, 3D 모델, 음성은 Higgsfield로 만들었고 원본 파일은 올리지 않았다. 효과음은 OpenGameArt의 CC0 묶음(Kenney, artisticdude, HaelDB, TinyWorlds, Zane Little Music, AntumDeluge, Ove Melaa, kurt)과 게임 안에서 합성한 소리를 썼다. 글꼴은 IBM Plex Sans KR, 고운바탕, 나눔손글씨 펜, 갈무리이고 모두 SIL Open Font License 1.1이다.
+위에 적은 부분의 코드 몇 개는 [code](code) 폴더에 옮겨 뒀다.
