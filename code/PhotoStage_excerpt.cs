@@ -1,5 +1,5 @@
-// 발췌: Assets/Scripts/UI/PhotoStage.cs (울림골 작업본)
-// v7에서 추가한 "사진을 잡아 돌려 뒷면을 읽는" 부분만 남겼다. 이 파일만으로는 컴파일되지 않는다(K, Story, HUD 등 게임의 다른 코드에 의존).
+// 울림골 Assets/Scripts/UI/PhotoStage.cs 중 일부. 사진을 잡아 돌려 뒷면을 읽는 부분만 남겼다.
+// 게임의 다른 코드(K, Story, HUD 등)에 기대고 있어서 이 파일만으로는 컴파일되지 않는다.
 
 using UnityEngine;
 using UnityEngine.EventSystems;
@@ -30,8 +30,8 @@ namespace Ullimgol.UI
             Apply();
         }
 
-        // … Build(): 사진 카드(앞면 인쇄 · 뒷면 종이)와 뒷면 볼펜 메모를 만드는 부분은 생략.
-        //   이후 작업본(v8)에서 앞면 그림과 메모 문구가 바뀌어, v7 시연 화면과 같지 않다.
+        // … Build(): 사진 카드와 뒷면 볼펜 메모를 만드는 부분은 뺐다.
+        //   시연을 찍은 뒤에 앞면 그림과 메모 문구를 바꿔서, 지금 코드는 시연 화면과 다르다.
 
         void Update()
         {

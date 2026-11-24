@@ -1,20 +1,21 @@
-# 선별 코드
+# 코드
 
-울림골 Unity 작업본에서 README의 근거와 직접 이어지는 부분만 옮겼습니다.
-게임의 다른 코드에 의존하므로 **이 폴더만으로는 컴파일되지 않고, 전체 소스도 아닙니다.**
+README에서 이야기한 부분의 코드만 옮겨 왔다. 게임의 다른 코드에 기대고 있어서 이 폴더만으로는 컴파일되지 않고, 전체 소스도 아니다.
 
-| 파일 | 원래 위치 | 옮긴 범위 | 관련 근거 |
-|---|---|---|---|
-| [ScrollKeep.cs](ScrollKeep.cs) | `Assets/Scripts/UI/ScrollKeep.cs` | 파일 전체 | 작업대 목록 위치 유지(v7) |
-| [HitFlash.cs](HitFlash.cs) | `Assets/Scripts/Creatures/HitFlash.cs` | 파일 전체 | 피해를 입은 몸이 잠깐 번쩍임(v6) |
-| [PhotoStage_excerpt.cs](PhotoStage_excerpt.cs) | `Assets/Scripts/UI/PhotoStage.cs` | 발췌 | 사진을 끌어 돌리기 · 뒷면을 읽었는지 판정(v7) |
-| [Locker17_excerpt.cs](Locker17_excerpt.cs) | `Assets/Scripts/Core/Story.cs` · `Assets/Scripts/World/StoryProps.cs` | 발췌 | 첫 사진은 확률로, 17번 사물함은 고정 장소에 |
-
-- 영어 주석은 원문 그대로이고, 맨 위 한국어 주석과 `…` 표시는 발췌하면서 붙였습니다
-- `PhotoStage.cs`의 `Build()`(사진 카드와 뒷면 메모를 만드는 부분)는 v7 이후 작업본(v8)에서 앞면 그림과 메모 문구가 바뀌어 v7 시연 화면과 같지 않으므로 뺐습니다
-- 나머지 세 부분은 v7 시연에서 보이는 동작(끌어 돌리기, 15–19번 사물함 중 17번 표시, 3초 비틀어 열기, 출정 지도 단서, 목록 위치 유지, 피해 번쩍임)과 같은 코드입니다
-- `ScrollKeep`은 창을 다시 그리는 곳에서 이렇게 부릅니다(`Assets/Scripts/UI/HubPanels.cs`):
+**[ScrollKeep.cs](ScrollKeep.cs)**
+작업대처럼 다시 그려지는 창에서 목록 위치를 지킨다. 원래 파일 그대로다. 창을 다시 여는 쪽(HubPanels.cs)에서는 이렇게 부른다.
 
 ```csharp
 static void Reopen(string id) { var ys = ScrollKeep.Capture(modal); UIRoot.I.CloseModal(); Open(modal, id); ScrollKeep.Restore(modal, ys); }
 ```
+
+**[HitFlash.cs](HitFlash.cs)**
+피해를 입은 크리처의 몸을 잠깐 번쩍이게 한다. 원래 파일 그대로다.
+
+**[PhotoStage_excerpt.cs](PhotoStage_excerpt.cs)**
+사진 카드를 마우스로 끌어 돌리고, 뒷면을 얼마나 봤는지 재는 부분이다. 사진 앞면 그림과 뒷면 메모를 만드는 부분은 시연을 찍은 뒤에 바뀌어서 뺐다.
+
+**[Locker17_excerpt.cs](Locker17_excerpt.cs)**
+첫 사진이 나오는 확률, 그리고 선광장 탈의실에 15번부터 19번 사물함을 세우고 17번에 일지와 테이프를 넣는 부분이다. Story.cs와 StoryProps.cs에서 필요한 곳만 옮겼다.
+
+영어 주석은 원래 코드에 있던 것이고, 맨 위의 한국어 설명과 생략 표시(…)는 옮기면서 붙였다.

@@ -1,5 +1,5 @@
-// 발췌: 울림골 작업본 — 첫 사진은 우연히, 다음 단서는 메모에 적힌 고정 장소에서.
-// 이 파일만으로는 컴파일되지 않는다(Container, RoomInfo, Stack 등 게임의 다른 코드에 의존).
+// 울림골 코드 일부. 첫 사진은 우연히 나오고, 다음 단서는 메모에 적힌 자리에 둔다.
+// 게임의 다른 코드(Container, RoomInfo, Stack 등)에 기대고 있어서 이 파일만으로는 컴파일되지 않는다.
 
 // ── Assets/Scripts/Core/Story.cs ─────────────────────────────
         // ── where the next story object must appear (13.7-5: a guaranteed, marked place)
